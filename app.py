@@ -9,6 +9,7 @@ with open(f'model/bike_model_xgboost.pkl', 'rb') as f:
 # Initialise the Flask app
 app = flask.Flask(__name__, template_folder='templates')
 
+
 # Set up the main route
 @app.route('/', methods=['GET', 'POST'])
 def main():
